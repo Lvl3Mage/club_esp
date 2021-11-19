@@ -1,0 +1,49 @@
+@import url("../fonts/Caveat/font-Caveat.css");
+//@import "example-slider.scss";
+@import "mixins.scss";
+.ibg{
+	background-position: center;
+	background-repeat: no-repeat;
+	&--contain{
+		background-size: contain;
+	}
+	&--cover{
+		background-size: cover;
+	}
+}
+/*.mask{
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	&--elliptic{
+		mask-image:url("../images/eliptic-shape.svg");
+	}
+	&--reverse-elliptic{
+		mask-image:url("../images/reverse-ellipse.svg");
+	}
+}*/
+.container{
+	width: 1320px;
+	height: auto;
+	margin: auto;
+}
+@media screen and (max-width: 1400px) {
+	.container{
+		width: 1140px;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.container{
+		width: 960px;
+	}
+}
+@media screen and (max-width: 992px) {
+	.container{
+		width: 720px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.container{
+		width: 100%;
+	}
+}

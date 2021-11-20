@@ -1,0 +1,94 @@
+.text{
+	&--white{
+		color: #fff;
+	}
+	&--black{
+		color: #3A3A3A;
+	}
+	&--gray{
+		color: #565656;
+	}
+	&--olive-yellow{
+		color: #E0BD7F;
+	}
+	&--olive-green{
+		color: #90A176;
+	}
+	&--Yrsa{
+		font-family: Yrsa;
+		font-style: normal;
+	}
+	&--Nunito{
+		font-family: Nunito;
+		font-style: normal;
+	}
+	&--300{
+		font-weight: 300;
+	}
+	&--400{
+		font-weight: 400;
+	}
+	&--500{
+		font-weight: 500;
+	}
+	&--600{
+		font-weight: 600;
+	}
+	&--700{
+		font-weight: 700;
+	}
+	&--XXXL{
+		@include fSize(768, 375, 100, 52);
+		&--static{
+			font-size: 100px;
+		}
+	}
+	&--XXL{
+		@include fSize(1500, 910, 52, 36);
+		&--static{
+			font-size: 52px;
+		}
+	}
+	&--XL{
+		line-height: 1em;
+		@include fSize(1500, 375, 36, 24);
+		&--static{
+			font-size: 36px;
+		}
+	}
+	&--L{
+		line-height: 1em;
+		@include fSize(1500, 910, 24, 18);
+		&--static{
+			font-size: 24px;
+		}
+	}
+	&--ML{
+		@include fSize(1500, 910, 18, 15);
+		line-height: 1em;
+		&--static{
+			font-size: 18px;
+		}
+	}
+	&--M{
+		@include fSize(1500, 910, 16, 13);
+		line-height: 1em;
+		&--static{
+			font-size: 16px;
+		}
+	}
+	&--S{
+		line-height: 1em;
+		@include fSize(1500, 910, 15, 12);
+		&--static{
+			font-size: 15px;
+		}
+	}
+	&--XS{
+		@include fSize(1500, 910, 14, 11);
+		line-height: 1em;
+		&--static{
+			font-size: 14px;
+		}
+	}
+}

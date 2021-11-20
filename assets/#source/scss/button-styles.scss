@@ -1,0 +1,17 @@
+.button{
+	border-radius: 10px;
+	display: inline-block;
+	&--large{
+		padding: 15px 50px;
+		@media screen and (max-width: 992px) {
+			padding: 15px 25px;
+		}
+	}
+	
+	&--olive-yellow{
+		background-color: #E7C08D;
+	}
+	&--white{
+		background-color: #FFF;
+	}
+}

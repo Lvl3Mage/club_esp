@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'Nunito';
+	/*src: url('HelveticaNeueCyr-Medium.eot');*/
+	src: local('Nunito-Light'),
+		/*url('HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),*/
+		/*url('HelveticaNeueCyr-Medium.woff') format('woff'),*/
+		url('Nunito-Light.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Nunito';
+	/*src: url('HelveticaNeueCyr-Medium.eot');*/
+	src: local('Nunito-Regular'),
+		/*url('HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),*/
+		/*url('HelveticaNeueCyr-Medium.woff') format('woff'),*/
+		url('Nunito-Regular.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Nunito';
+	/*src: url('HelveticaNeueCyr-Medium.eot');*/
+	src: local('Nunito-SemiBold'),
+		/*url('HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),*/
+		/*url('HelveticaNeueCyr-Medium.woff') format('woff'),*/
+		url('Nunito-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Nunito';
+	/*src: url('HelveticaNeueCyr-Medium.eot');*/
+	src: local('Nunito-Bold'),
+		/*url('HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),*/
+		/*url('HelveticaNeueCyr-Medium.woff') format('woff'),*/
+		url('Nunito-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}

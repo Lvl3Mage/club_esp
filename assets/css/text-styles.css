@@ -1,0 +1,54 @@
+.text--white {
+  color: #fff;
+}
+.text--gray {
+  color: #565656;
+}
+.text--olive {
+  color: #E0BD7F;
+}
+.text--Caveat {
+  font-family: Caveat;
+  font-style: normal;
+}
+.text--Nunito {
+  font-family: Nunito;
+  font-style: normal;
+}
+.text--400 {
+  font-weight: 400;
+}
+.text--500 {
+  font-weight: 500;
+}
+.text--700 {
+  font-weight: 700;
+}
+
+.title--white {
+  color: #fff;
+}
+.title--gray {
+  color: #565656;
+}
+.title--olive {
+  color: #E0BD7F;
+}
+.title--Caveat {
+  font-family: Caveat;
+  font-style: normal;
+}
+.title--Nunito {
+  font-family: Nunito;
+  font-style: normal;
+}
+.title--400 {
+  font-weight: 400;
+}
+.title--500 {
+  font-weight: 500;
+}
+.title--700 {
+  font-weight: 700;
+}
+/*# sourceMappingURL=text-styles.css.map */

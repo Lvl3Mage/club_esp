@@ -1,9 +1,8 @@
 /* Слайдер */
 .about-us-slider{
 	min-width: 0;
-	display: flex;
+	display: flex !important;
 	.slick-slider{
-
 	}
 	/* Слайдер запущен */
 	.slick-slider.slick-initialized{
@@ -43,7 +42,7 @@
 	}
 	/* Стрелка */
 	.slick-arrow{
-
+		font-size: 0;
 	}
 	/* Стрелка влево */
 	.slick-arrow.slick-prev{
@@ -59,29 +58,46 @@
 	}
 	/* Точки (булиты) */
 	.slick-dots{
-
+		padding: 0;
+		margin-top: 50px;
+		margin-bottom: 0;
+		display: flex;
+		justify-content: center;
+		@media screen and (min-width: 1200px) {
+			display: none;
+		}
 	}
-	.events .slick-dots{
-	}
-
 	.slick-dots li{
-		
+		list-style: none;
+		width: 10px;
+		height: 10px;
+		background-color: #C4C4C4;
+		border-radius: 10px;
+		margin: 0 5px;
+		transition: all 0.5s;
 	}
 	/* Активная точка */
 	.slick-dots li.slick-active{
+		width: 30px;
+		background-color: #839470;
+		transition: all 0.5s;
 	}
 	/* Элемент точки */
 	.slick-dots li button{
+		border: none;
+		font-size: 0;
 
 	}
-	.slick-dots li button::before{
-		//content:'';
+	/*.slick-dots li button::before{
+		content:'';
+		border-radius: 50%;
 		
 	}
 	.slick-dots li button::after{
-		//content:'';
+		content:'';
+		border-radius: 50%;
 		
-	}
+	}*/
 	.slick-dots li.slick-active button{
 	}
 	.slick-dots li.slick-active button::before{

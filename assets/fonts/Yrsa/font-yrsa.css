@@ -1,40 +1,55 @@
 @font-face {
-	font-family: 'Caveat';
+	font-family: 'Yrsa';
 	/*src: url('HelveticaNeueCyr-Medium.eot');*/
-	src: local('Caveat-Regular'),
+	src: local('Yrsa-Light'),
 		/*url('HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),*/
 		/*url('HelveticaNeueCyr-Medium.woff') format('woff'),*/
-		url('Caveat-Regular.ttf') format('truetype');
+		url('Yrsa-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: fallback;
+}
+@font-face {
+	font-family: 'Yrsa';
+	/*src: url('HelveticaNeueCyr-Medium.eot');*/
+	src: local('Yrsa-Regular'),
+		/*url('HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),*/
+		/*url('HelveticaNeueCyr-Medium.woff') format('woff'),*/
+		url('Yrsa-Regular.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
+	font-display: fallback;
 }
 @font-face {
-	font-family: 'Caveat';
+	font-family: 'Yrsa';
 	/*src: url('HelveticaNeueCyr-Medium.eot');*/
-	src: local('Caveat-Medium'),
+	src: local('Yrsa-Medium'),
 		/*url('HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),*/
 		/*url('HelveticaNeueCyr-Medium.woff') format('woff'),*/
-		url('Caveat-Medium.ttf') format('truetype');
+		url('Yrsa-Medium.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
+	font-display: fallback;
 }
 @font-face {
-	font-family: 'Caveat';
+	font-family: 'Yrsa';
 	/*src: url('HelveticaNeueCyr-Medium.eot');*/
-	src: local('Caveat-SemiBold'),
+	src: local('Yrsa-SemiBold'),
 		/*url('HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),*/
 		/*url('HelveticaNeueCyr-Medium.woff') format('woff'),*/
-		url('Caveat-SemiBold.ttf') format('truetype');
+		url('Yrsa-SemiBold.ttf') format('truetype');
 	font-weight: 600;
 	font-style: normal;
+	font-display: fallback;
 }
 @font-face {
-	font-family: 'Caveat';
+	font-family: 'Yrsa';
 	/*src: url('HelveticaNeueCyr-Medium.eot');*/
-	src: local('Caveat-Bold'),
+	src: local('Yrsa-Bold'),
 		/*url('HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),*/
 		/*url('HelveticaNeueCyr-Medium.woff') format('woff'),*/
-		url('Caveat-Bold.ttf') format('truetype');
+		url('Yrsa-Bold.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
+	font-display: fallback;
 }

@@ -34,35 +34,53 @@
 	}); 
 	$(document).ready( function () {
 		$(".about-us-slider").slick({
-		arrows:false,
-		dots:true,
-		infinite: false,
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		autoplay: true,
-  		autoplaySpeed: 2000,
-		responsive: [
-			{
-				breakpoint: 1200,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1,
+			arrows:false,
+			dots:true,
+			infinite: false,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			autoplay: true,
+	  		autoplaySpeed: 2000,
+			responsive: [
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1,
+					}
+				},{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1
+					}
+				},{
+					breakpoint: 576,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
 				}
-			},{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1
+			]
+		});
+		$(".reviews__slider").slick({
+			arrows:true,
+			dots:true,
+			infinite: true,
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			autoplay: false,
+	  		autoplaySpeed: 2000,
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
 				}
-			},{
-				breakpoint: 576,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
-				}
-			}
-		]
-	});
+			]
+		});
 		ibg();
 		RatioW();
 		RatioH();

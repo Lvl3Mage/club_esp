@@ -8,12 +8,25 @@
 	&--gray{
 		color: #565656;
 	}
+	&--light-gray{
+		color: #676767;
+	}
 	&--olive-yellow{
 		color: #E0BD7F;
 	}
 	&--olive-green{
 		color: #90A176;
 	}
+	&--olive-darkgreen{
+		color: #6B7A55;
+		
+	}
+	&--outline{
+		&--olive-green{
+			-webkit-text-stroke: 0.2px #90A176;
+		}
+	}
+
 	&--Yrsa{
 		font-family: Yrsa;
 		font-style: normal;

@@ -1,7 +1,8 @@
 /* Слайдер */
-.about-us-slider{
+.reviews__slider{
 	min-width: 0;
 	display: flex !important;
+	align-items: center;
 	.slick-slider{
 	}
 	/* Слайдер запущен */
@@ -43,29 +44,80 @@
 	/* Стрелка */
 	.slick-arrow{
 		font-size: 0;
+		flex: 75px 0 0;
+		height: 75px;
+		background: transparent;
+		border-radius: 50%;
+		border: 4px solid #AFBE94;
+		transition: all 0.5s;
+		@media screen and (max-width: 768px) {
+			display: none !important;
+		}
+		&::before{
+			display: inline-block;
+			content: "";
+			width: 35px;
+			box-sizing: border-box;
+			border: 4px solid #AFBE94;
+			background: #AFBE94;
+			left: 20px;
+			transform-origin: 0 50%;
+			transform: translateY(6px) rotate(-45deg);
+			border-radius: 4px;
+			transition: all 0.5s;
+		}
+		&::after{
+			display: inline-block;
+			content: "";
+			width: 35px;
+			box-sizing: border-box;
+			border: 4px solid #AFBE94;
+			background: #AFBE94;
+			left: 20px;
+			transform-origin: 0 50%;
+			transform: translateY(-6px) rotate(45deg);
+			border-radius: 4px;
+			transition: all 0.5s;
+		}
+		&:hover{
+			border: 4px solid #9fab89;
+			transition: all 0.5s;
+			&::after{
+				transition: all 0.5s;
+				border: 4px solid #9fab89;
+				background: #9fab89;
+			}
+			&::before{
+				transition: all 0.5s;
+				border: 4px solid #9fab89;
+				background: #9fab89;
+			}
+		}
 	}
 	/* Стрелка влево */
 	.slick-arrow.slick-prev{
-
+		margin-right: 10px;
 	}
 	/* Стрелка вправо */
 	.slick-arrow.slick-next{
+		margin-left: 10px;
+		transform: rotate(180deg);
 
 	}
 	/* Стрелка не активная */
 	.slick-arrow.slick-disabled{
-
 	}
 	/* Точки (булиты) */
 	.slick-dots{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
 		padding: 0;
 		margin-top: 50px;
 		margin-bottom: 0;
 		display: flex;
 		justify-content: center;
-		@media screen and (min-width: 1200px) {
-			display: none;
-		}
 	}
 	.slick-dots li{
 		list-style: none;

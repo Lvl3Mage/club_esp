@@ -85,4 +85,21 @@
 		RatioW();
 		RatioH();
 	});
+	$(document).on('click', '.mob-burger', function(event) {
+		if($(this).hasClass("mob-burger--active")){
+			$("body").css("overflow", "visible");
+		}
+		else{
+			$("body").css("overflow", "hidden");
+			$('html, body').animate(
+				{
+			      scrollTop: $('html, body').offset().top,
+			   },
+			   300
+		   );
+		}
+		$(this).toggleClass("mob-burger--active");
+		$(".mob-menu").toggleClass("mob-menu--active");
+
+	});
 })(jQuery);	

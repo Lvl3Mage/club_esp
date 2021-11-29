@@ -566,6 +566,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.top-menu__logo-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 .top-menu__menu {
   -webkit-box-flex: 50%;
       -ms-flex: 50% 0 0px;
@@ -1569,6 +1576,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.footer__logo-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 .footer__menu-item {
   margin-bottom: 25px;
 }
@@ -2040,5 +2054,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.buy-option__buy-button:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: inset 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=style.css.map */

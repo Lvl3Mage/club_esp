@@ -591,18 +591,24 @@ body{
 		}
 	}
 	&__bg-image {
-		width: 100%;
+		z-index: -10;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		/*width: 100%;*/
 		&>img{
 			width: 100%;
 			height: auto;	
 		}
 	}
 	&__avatar {
-		position: absolute;
+		margin: 22%;
+		/*position: absolute;
 		top: 24%;
 		bottom: 24%;
 		left: 24%;
-		right: 24%;
+		right: 24%;*/
 		border-radius: 50%;
 	}
 	&__text-wrapper{
@@ -811,10 +817,6 @@ body{
 			flex-direction: row-reverse;
 		}
 	}
-	/*
-	:nth-child(even){
-		flex-direction: row-reverse;
-	}*/
 }
 .speaker {
 	display: flex;

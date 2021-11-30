@@ -1372,7 +1372,20 @@ body {
   margin-bottom: 120px;
   text-align: center;
 }
-.review {
+.review__wrapper {
+  margin: 0 10px;
+}
+.review__content-wrapper {
+  position: relative;
+  margin: 0 10px;
+  padding: 20px 20px 10% 20px;
+}
+.review__bg-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1380,108 +1393,137 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
 }
-.review--small {
-  padding-right: 15%;
-  padding-left: 15%;
-}
-@media screen and (max-width: 768px) {
-  .review--small {
-    padding-right: 15%;
-    padding-left: 15%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .review--small {
-    padding-right: 5%;
-    padding-left: 5%;
-  }
-}
-@media screen and (max-width: 375px) {
-  .review--small {
-    padding: 0;
-  }
-}
-.review--big {
-  padding-right: 2.5%;
-  padding-left: 2.5%;
-  /*@media screen and (max-width: 450px) {
-  	display: none;
-  }*/
-}
-.review--big .review__avatar-outer-wrapper {
-  margin-left: 7%;
-}
-.review__content-outer-wrapper {
-  position: relative;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-left: 2%;
-}
-@media screen and (max-width: 768px) {
-  .review__content-outer-wrapper {
-    padding-left: calc(30px - 3%);
-  }
-}
-.review__bg {
-  width: 100%;
-}
-.review__bg > img {
+.review__bg-top > img {
   width: 100%;
   height: auto;
 }
-.review__content-inner-wrapper {
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  padding-left: 2%;
-  position: absolute;
+.review__bg-mid {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
-@media screen and (max-width: 768px) {
-  .review__content-inner-wrapper {
-    padding-left: calc(30px - 3%);
-  }
+.review__bg-mid > img {
+  width: 100%;
+  height: 100%;
+}
+.review__bg-bottom > img {
+  width: 100%;
+  height: auto;
 }
 .review__stars-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
 }
-@media screen and (max-width: 375px) {
-  .review__stars-wrapper {
-    margin-bottom: 10px;
-  }
-}
-.review__avatar-outer-wrapper {
-  z-index: 10;
-  margin-top: -20px;
-  -webkit-box-flex: 136px;
-      -ms-flex: 136px 0 0px;
-          flex: 136px 0 0;
-  width: 100%;
-}
-.review__avatar-inner-wrapper {
-  width: 100%;
+.review__avatar-wrapper {
+  margin-top: -7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
 }
 .review__avatar {
-  height: 136px;
-  width: 136px;
+  z-index: 20;
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
-  background-position-y: -50px;
-  margin-right: 50px;
 }
+.review__avatar-text {
+  margin-left: 20px;
+}
+
+/*.review {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	&--small{
+		padding-right: 15%;
+		padding-left: 15%;
+		@media screen and (max-width: 768px) {
+			padding-right: 15%;
+			padding-left: 15%;
+		}
+		@media screen and (max-width: 576px) {
+			padding-right: 5%;
+			padding-left: 5%;
+		}
+		@media screen and (max-width: 375px) {
+			padding: 0;
+		}
+	}
+	&--big{
+		padding-right: 2.5%;
+		padding-left: 2.5%;
+		//@media screen and (max-width: 450px) {
+		//	display: none;
+		//}
+		.review__avatar-outer-wrapper{
+			margin-left: 7%;
+		}
+	}
+
+	&__content-outer-wrapper{
+		position: relative;
+		width: 100%;
+		box-sizing: border-box;
+		padding-left: 2%;
+		@media screen and (max-width: 768px) {
+			padding-left: calc(30px - 3%);
+		}
+	}
+	&__bg{
+		width: 100%;
+		&>img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__content-inner-wrapper{
+		top: 15px;
+		left: 15px;
+		right: 15px;
+		bottom: 15px;
+		padding-left: 2%;
+		@media screen and (max-width: 768px) {
+			padding-left: calc(30px - 3%);
+		}
+		position: absolute;
+	}
+	&__stars-wrapper {
+		display: flex;
+		margin-bottom: 20px;
+		@media screen and (max-width: 375px) {
+			margin-bottom: 10px;
+		}
+	}
+	&__star {
+	}
+	&__text {
+	}
+	&__avatar-outer-wrapper {
+		z-index: 10;
+		margin-top: -20px;
+		flex: 136px 0 0;
+		width: 100%;
+	}
+	&__avatar-inner-wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: start;
+
+	}
+	&__avatar {
+		height: 136px;
+		width: 136px;
+		border-radius: 50%;
+		background-position-y: -50px;
+		margin-right: 50px;
+	}
+	&__avatar-decor {
+	}
+	&__avatar-desc {
+	}
+}*/
 .footer {
   position: relative;
   margin-top: 200px;

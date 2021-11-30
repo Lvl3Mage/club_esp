@@ -794,6 +794,9 @@ body{
 	&__speaker {
 		flex: 30% 0 0;
 		min-width: 330px;
+		@media screen and (max-width: 375px) {
+			min-width: 270px;
+		}
 	}
 	@media screen and (max-width: 1400px) {
 		:nth-child(1n).speaker{
@@ -832,6 +835,13 @@ body{
 	}
 	&__image-decor {
 		position: absolute;
+		left: calc(100% - 50px);
+		right: -12px;
+		top: -10px;
+		&>img{
+			width: 100%;
+			height: auto;
+		}
 	}
 	&__description-wrapper {
 		margin-left: 15px;
@@ -849,6 +859,7 @@ body{
 		bottom: 100%;
 		width: 26px;
 		height: 26px;
+		border-radius: 50%;
 	}
 	&__description {
 		text-align: left;

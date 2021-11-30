@@ -1462,6 +1462,11 @@ body {
           flex: 30% 0 0;
   min-width: 330px;
 }
+@media screen and (max-width: 375px) {
+  .speakers__speaker {
+    min-width: 270px;
+  }
+}
 @media screen and (max-width: 1400px) {
   .speakers :nth-child(1n).speaker {
     -webkit-box-orient: horizontal;
@@ -1517,6 +1522,13 @@ body {
 }
 .speaker__image-decor {
   position: absolute;
+  left: calc(100% - 50px);
+  right: -12px;
+  top: -10px;
+}
+.speaker__image-decor > img {
+  width: 100%;
+  height: auto;
 }
 .speaker__description-wrapper {
   margin-left: 15px;
@@ -1543,6 +1555,7 @@ body {
   bottom: 100%;
   width: 26px;
   height: 26px;
+  border-radius: 50%;
 }
 .speaker__description {
   text-align: left;
